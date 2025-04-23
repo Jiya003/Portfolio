@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Add this in your <head> -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<style>
+    .contact-section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  color: #ffea00;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.social-links {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-icon {
+  color: #ffea00;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon i {
+  margin-right: 8px;
+  font-size: 1.5rem;
+}
+
+.social-icon:hover {
+  color: #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #111;
+  color: #fff;
+  border: 1px solid #ffea00;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #fff;
+}
+
+.contact-form button {
+  background-color: #ffea00;
+  color: #111;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #fff;
+  color: #111;
+}
+
+  </style>
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <img src="assets/divyanshi pic.jpeg" alt="Divyanshi Avatar" class="avatar" />
+        <h1 class="name">Divyanshi Maurya</h1>
+        <p class="title">Data Analyst and Android Developer</p>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <ul>
+          <li>
+            <a href="mailto:divyanshi.tasks@gmail.com" class="contact-link">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>divyanshi.tasks@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+91 9877162324" class="contact-link">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <span>+91 98771-62324</span>
+            </a>
+          </li>
+          <li>
+            <address class="contact-link">
+              <ion-icon name="location-outline"></ion-icon>
+              <span>RaeBareli, Uttar Pradesh, India</span>
+            </address>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social Media Links -->
+      
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Navbar -->
+      <header class="top-navbar">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+            <li><a href="education.html" class="nav-link">Education</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+            <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="contact" class="contact-section">
+        <h2 data-aos="fade-up">Contact Me</h2>
+      
+        <!-- Social Links -->
+        <div class="social-links" data-aos="fade-up" data-aos-delay="100">
+          <a href="https://in.linkedin.com/in/divyanshi-maurya" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/Jiya003" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      
+        <!-- Contact Form -->
+        <form class="contact-form" data-aos="fade-up" data-aos-delay="200" action="mailto:divyanshi.tasks@gmail.com" method="POST" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+      
+      
+      
+    </div>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+  
+
+</body>
+
+</html>

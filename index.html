@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Add this in your <head> -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <img src="assets/divyanshi pic.jpeg" alt="Divyanshi Avatar" class="avatar" />
+        <h1 class="name">Divyanshi Maurya</h1>
+        <p class="title">Data Analyst and Android Developer</p>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <ul>
+          <li>
+            <a href="mailto:divyanshi.tasks@gmail.com" class="contact-link">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>divyanshi.tasks@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+91 9877162324" class="contact-link">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <span>+91 98771-62324</span>
+            </a>
+          </li>
+          <li>
+            <address class="contact-link">
+              <ion-icon name="location-outline"></ion-icon>
+              <span>RaeBareli, Uttar Pradesh, India</span>
+            </address>
+          </li>
+        </ul>
+      </div>
+
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Navbar -->
+      <header class="top-navbar">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+            <li><a href="education.html" class="nav-link">Education</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+            <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Sections -->
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <ul class="about-list">
+          <li>
+            I am a passionate <strong>Data Analyst</strong> and <strong>Android Developer</strong> with hands-on experience in developing mobile applications using <strong>Kotlin</strong> and integrating <strong>Firebase</strong> services.
+          </li>
+          <li>
+            I specialize in building scalable and efficient apps with real-time solutions using:
+            <ul class="nested-list">
+              <li>Firebase Realtime Database</li>
+              <li>Firebase Authentication</li>
+              <li>Firebase Storage</li>
+            </ul>
+          </li>
+          <li>
+            Currently developing an app for seamless communication and file sharing between students and teachers, featuring:
+            <ul class="nested-list">
+              <li>Real-time messaging</li>
+              <li>File attachments (PDF, DOCX, PPT, PSD)</li>
+              <li>Live updates and collaboration</li>
+            </ul>
+          </li>
+          <li>
+            I'm deeply interested in <strong>technology</strong> and <strong>data</strong>, always exploring new tools and staying current with industry best practices.
+          </li>
+        </ul>
+      </section>
+
+      <div class="about-buttons">
+        <a href="terminal.html" class="btn-terminal">
+          <i class="fas fa-terminal"></i> Open Terminal
+        </a>
+        <a href="assets/Divyanshi_Maurya_Resume.pdf" download class="btn-resume">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+
+    </br></br>
+      
+      <section id="expertise" class="section">
+        <h2>Technical Expertise</h2>
+        <div class="expertise-grid">
+          <div class="expertise-card" data-aos="fade-up">
+            <ion-icon name="analytics-outline"></ion-icon>
+            <h3>Data Analysis</h3>
+            <p>Pandas, NumPy, Matrix</p>
+          </div>
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="100">
+            <ion-icon name="cloud-outline"></ion-icon>
+            <h3>Cloud & DevOps</h3>
+            <p>GCP, Docker, Vsphere</p>
+          </div>
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="200">
+            <ion-icon name="bar-chart-outline"></ion-icon>
+            <h3>Data Visualization</h3>
+            <p>Matplotlib, Seaborn, Tableau</p>
+          </div>
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="300">
+            <ion-icon name="hardware-chip-outline"></ion-icon>
+            <h3>AI / ML</h3>
+            <p>Scikit-learn, TensorFlow, Keras, Neural networks</p>
+          </div>
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="400">
+            <ion-icon name="logo-android"></ion-icon>
+            <h3>Android Development</h3>
+            <p>Kotlin, Firebase, XML</p>
+          </div>
+
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="400">
+            <ion-icon name="code-slash-outline"></ion-icon>
+            <h3>Languages</h3>
+            <p>Python, Java, C, Kotlin, HTML, JavaScript, CSS</p>
+          </div>
+
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="500">
+            <ion-icon name="server-outline"></ion-icon>
+            <h3>Databases</h3>
+            <p>Firebase Realtime DB, Firestore, MySQL, MongoDB</p>
+          </div>
+        
+          <div class="expertise-card" data-aos="fade-up" data-aos-delay="700">
+            <ion-icon name="apps-outline"></ion-icon>
+            <h3>Tools & Platforms</h3>
+            <p>Git, GitHub, Firebase Console, Android Studio, Jupyter Notebook</p>
+          </div>
+          
+
+
+        </div>
+      </section>
+      
+      
+      
+    </div>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+  
+
+</body>
+
+</html>

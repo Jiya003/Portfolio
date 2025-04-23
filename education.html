@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Add this in your <head> -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<style>
+  .education-section {
+    padding: 10px;
+    max-width: 1100px;
+    margin: auto;
+    color: #ffea00;
+  }
+
+  .education-section h2 {
+    font-size: 1.7em;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .box {
+    background-color: #111;
+    padding: 20px;
+    margin-bottom: 20px;
+   
+    border-left: 4px solid #ffea00;
+    border-right: 4px solid #ffea00;
+    border-top: 1px dashed #ffea00;
+    border-bottom: 1px dashed #ffea00;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(255, 234, 0, 0.8);
+  }
+
+  .box h3 {
+    font-size: 1.0em;
+    margin-bottom: 10px;
+  }
+
+  .box p {
+    font-size: 1.0em;
+    line-height: 1.6;
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <img src="assets/divyanshi pic.jpeg" alt="Divyanshi Avatar" class="avatar" />
+        <h1 class="name">Divyanshi Maurya</h1>
+        <p class="title">Data Analyst and Android Developer</p>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <ul>
+          <li>
+            <a href="mailto:divyanshi.tasks@gmail.com" class="contact-link">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>divyanshi.tasks@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+91 9877162324" class="contact-link">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <span>+91 98771-62324</span>
+            </a>
+          </li>
+          <li>
+            <address class="contact-link">
+              <ion-icon name="location-outline"></ion-icon>
+              <span>RaeBareli, Uttar Pradesh, India</span>
+            </address>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social Media Links -->
+      
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Navbar -->
+      <header class="top-navbar">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+            <li><a href="education.html" class="nav-link">Education</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+            <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="education" class="education-section">
+        <h2 data-aos="fade-up">My Education</h2>
+      
+        <!-- Box for Bachelor's Degree -->
+        <div class="box" data-aos="fade-up" data-aos-delay="200">
+          <h3>Bachelor's of Technology in Computer Science and Engineering</h3>
+          <p><b>Institution: </b> Lovely Professional University, 2022 - 2026</p>
+          <p><b>Specialization: </b> Machine Learning and Data Science with UpGrad</p>
+          <p><b>CGPA: </b>8.74</p>
+          <p><b>Courses: </b> Computer networks, Operating Systems, DMBS, DSA</p>
+        </div>
+      
+        <!-- Box for Certificate -->
+        <div class="box" data-aos="fade-up" data-aos-delay="400">
+          <h3>Class 12th</h3>
+          <p><b>Institution: </b> Ryan International School, 2020-2021</p>
+          <p><b>Percentage: </b>79.5% (ISC)</p>
+        </div>
+      
+        <!-- Box for Additional Courses -->
+        <div class="box" data-aos="fade-up" data-aos-delay="600">
+          <h3>Class 10th</h3>
+          <p><b>Institution: </b> Ryan International School, 2018-2019</p>
+          <p><b>Percentage: </b>71.8% (ICSE)</p>
+        </div>
+      </section>
+        
+      
+      
+      
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init(); // Initialize the AOS library
+  </script>
+
+  
+
+</body>
+
+</html>

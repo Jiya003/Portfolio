@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Add this in your <head> -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<style>
+    .volunteer-section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+  color: #ffea00;
+  text-align: center;
+}
+
+.volunteer-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.volunteer-gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  border-bottom: 1px solid #444;
+  border-top: 1px solid #444;
+}
+
+.volunteer-gallery img {
+  height: 180px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 234, 0, 0.2);
+}
+
+.volunteer-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 234, 0, 0.5);
+}
+
+.volunteer-description {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.7;
+  text-align: justify;
+  background: #111;
+  padding: 25px;
+  border-left: 4px solid #ffea00;
+  border-right: 4px solid #ffea00;
+  border-top: 1px dashed #ffea00;
+  border-bottom: 1px dashed #ffea00;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 234, 0, 0.2);
+}
+
+  </style>
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <img src="assets/divyanshi pic.jpeg" alt="Divyanshi Avatar" class="avatar" />
+        <h1 class="name">Divyanshi Maurya</h1>
+        <p class="title">Data Analyst and Android Developer</p>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <ul>
+          <li>
+            <a href="mailto:divyanshi.tasks@gmail.com" class="contact-link">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>divyanshi.tasks@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+91 9877162324" class="contact-link">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <span>+91 98771-62324</span>
+            </a>
+          </li>
+          <li>
+            <address class="contact-link">
+              <ion-icon name="location-outline"></ion-icon>
+              <span>RaeBareli, Uttar Pradesh, India</span>
+            </address>
+          </li>
+        </ul>
+      </div>
+
+      
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Navbar -->
+      <header class="top-navbar">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+            <li><a href="education.html" class="nav-link">Education</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+            <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="volunteer" class="volunteer-section">
+        <h2 data-aos="fade-up">Volunteer Work</h2>
+      
+        <!-- Image Slider -->
+        <div class="volunteer-gallery" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/pic1.png" alt="Teaching in Village" />
+          <img src="assets/pic2.png" alt="Student Interaction" />
+          <img src="assets/pic3.png" alt="Educational Activity" />
+          <img src="assets/pic4.png" alt="Community Engagement" />
+          <img src="assets/pic5.png" alt="Debate Session" />
+          <img src="assets/pic6.png" alt="Report Discussion" />
+        </div>
+      
+        <!-- Description -->
+        <div class="volunteer-description" data-aos="fade-up" data-aos-delay="200">
+          <p>
+            Actively volunteered in teaching, focusing on educating students from lower-income families in villages across Uttar Pradesh. I analyzed ground reports to assess educational challenges, identifying key gaps in learning resources and accessibility. I empowered students through interactive sessions, fostering critical thinking and confidence. I initiated and moderated debates, engaging with community members to understand diverse perspectives on education. My efforts resulted in the development of a comprehensive report for the school principal, detailing findings and recommendations to improve learning conditions. I contributed to improving educational opportunities and bridging learning disparities in underserved communities through strategic interventions.
+          </p>
+        </div>
+      </section>
+      
+      
+      
+      
+    </div>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+  
+
+</body>
+
+</html>

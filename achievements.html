@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Add this in your <head> -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<style>
+    .achievements-section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      color: #ffea00;
+      text-align: center;
+    }
+  
+    .achievements-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      position: relative;
+    }
+  
+    .achievements-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .achievement-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  box-shadow: 0 0 10px rgba(255, 234, 0, 0.1);
+}
+
+  
+    .achievement-card {
+      background: #111;
+      padding: 25px;
+      border-left: 4px solid #ffea00;
+      border-right: 4px solid #ffea00;
+      border-top: 1px dashed #ffea00;
+      border-bottom: 1px dashed #ffea00;
+      box-shadow: 0 0 15px rgba(255, 234, 0, 0.3);
+      border-radius: 10px;
+      max-width: 320px;
+      text-align: left;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  
+    .achievement-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 30px rgba(255, 234, 0, 0.6);
+    }
+  
+    .achievement-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+  
+    .achievement-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ddd;
+      margin-bottom: 10px;
+    }
+  
+    .achievement-card span {
+      font-size: 0.9rem;
+      color: #aaa;
+      display: block;
+      text-align: right;
+    }
+  
+    @media (max-width: 768px) {
+      .achievements-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <img src="assets/divyanshi pic.jpeg" alt="Divyanshi Avatar" class="avatar" />
+        <h1 class="name">Divyanshi Maurya</h1>
+        <p class="title">Data Analyst and Android Developer</p>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <ul>
+          <li>
+            <a href="mailto:divyanshi.tasks@gmail.com" class="contact-link">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>divyanshi.tasks@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+91 9877162324" class="contact-link">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <span>+91 98771-62324</span>
+            </a>
+          </li>
+          <li>
+            <address class="contact-link">
+              <ion-icon name="location-outline"></ion-icon>
+              <span>RaeBareli, Uttar Pradesh, India</span>
+            </address>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social Media Links -->
+      
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Navbar -->
+      <header class="top-navbar">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+            <li><a href="education.html" class="nav-link">Education</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+            <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="achievements" class="achievements-section">
+        <h2 data-aos="fade-up">Achievements</h2>
+      
+        <div class="achievements-container">
+            <!-- Achievement 1 -->
+            <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+              <img src="./assets/achievement1.jpg" alt="Hackathrone Achievement" class="achievement-img" />
+              <h3>Top Runner-up – Hackathrone 1.0</h3>
+              <p>Built a real-time chat and Personalized Learning Environment within 24 hours organized by GeeksforGeeks. Recognized for UI and backend integration.</p>
+              <span>August 2024</span>
+            </div>
+          
+            <!-- Achievement 2 -->
+            <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+              <img src="./assets/acheivement2.png" alt="LeetCode Badge" class="achievement-img" />
+              <h3>Problem Solving</h3>
+              <p>Completed over 200+ questions on LeetCode with 85% accuracy.</p>
+              <span>2023–2025</span>
+            </div>
+          
+            <!-- Achievement 3 -->
+            <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+              <img src="./assets/achievement3.png" alt="Cybersecurity Workshop" class="achievement-img" />
+              <h3>Top Performer – Cybersecurity Workshop</h3>
+              <p>Recognized among the top participants in a university workshop focused on cybersecurity essentials and practical tools.</p>
+              <span>March 2023</span>
+            </div>
+          </div>
+          
+      </section>
+      
+      
+      
+    </div>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+  
+
+</body>
+
+</html>

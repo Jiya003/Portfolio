@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terminal</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #ffea00;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .terminal-box {
+      background-color: #111;
+      border: 2px solid #ffea00;
+      padding: 20px;
+      width: 90%;
+      max-width: 700px;
+      height: 500px;
+      overflow-y: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #ffea00;
+    }
+
+    .output {
+      white-space: pre-wrap;
+      margin-bottom: 10px;
+    }
+
+    .input-line {
+      display: flex;
+      align-items: center;
+    }
+
+    .input-line span {
+      margin-right: 10px;
+    }
+
+    input {
+      background: none;
+      border: none;
+      color: #ffea00;
+      font-family: inherit;
+      font-size: 1em;
+      outline: none;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal-box" id="terminal">
+    <div class="output">Welcome to Divyanshi Maurya's Terminal Portfolio. Type <b>help</b> to get started.</div>
+    <div class="input-line">
+      <span>$</span>
+      <input type="text" id="commandInput" autofocus />
+    </div>
+  </div>
+
+  <script>
+    const terminal = document.getElementById('terminal');
+const input = document.getElementById('commandInput');
+
+// Define responses for different commands
+const responses = {
+  help: "Available commands:\n - about\n - experience\n - projects\n - exit",
+  about: "I am Divyanshi Maurya, a Data Analyst & Android Developer skilled in Kotlin, Firebase, and data visualization.",
+  experience: "1 month experience as a business analyst and data science intern in Sparks Foundation under GRIP program.",
+  projects: "Available Projects: 1. zenQR app: Text and Image QR Converter. 2. Market Basket Analysis 3. Crop Yield Prediction 4. SmartHive: A BYOD app for learners.",
+  "project 1": "zenQR app: A text and image QR converter app designed to simplify the process of generating QR codes for various types of content. Built using Kotlin and integrated with Firebase for real-time data management.",
+  "project 2": "Market Basket Analysis: Conducted analysis on retail transaction data to identify product pairings and generate actionable insights for targeted marketing strategies. Used Python (Pandas, NumPy) and data visualization tools.",
+  "project 3": "Crop Yield Prediction: Developed a predictive model for estimating crop yields based on historical weather and soil data. Implemented machine learning algorithms (e.g., Linear Regression, Random Forest) for accuracy.",
+  "project 4": "SmartHive: A BYOD (Bring Your Own Device) app developed for students to enhance learning experiences. Integrated Firebase for real-time updates and notifications, providing a seamless user experience.",
+};
+
+// Handle user input
+input.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter') {
+    const cmd = input.value.trim().toLowerCase();
+    const output = document.createElement('div');
+    output.className = 'output';
+    output.textContent = `$ ${cmd}\n`;
+
+    // Handle exit command
+    if (cmd === 'exit') {
+      output.textContent += 'Exiting terminal...';
+      terminal.insertBefore(output, input.parentElement);
+      input.value = '';
+      setTimeout(() => {
+        window.location.href = 'index.html'; // Change to your homepage path
+      }, 1000);
+      return;
+    }
+
+    // Display responses or handle unknown commands
+    output.textContent += (responses[cmd] || 'Command not found. Type "help".');
+    terminal.insertBefore(output, input.parentElement);
+    input.value = '';
+    terminal.scrollTop = terminal.scrollHeight;
+  }
+});
+
+  </script>
+</body>
+</html>

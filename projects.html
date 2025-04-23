@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Add this in your <head> -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<style>
+    .projects-section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+  color: #ffea00;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #111;
+  color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(255, 234, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #ffea00;
+  border-right: 4px solid #ffea00;
+  border-top: 1px dashed #ffea00;
+  border-bottom: 1px dashed #ffea00;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 234, 0, 0.4);
+}
+
+.project-card img {
+  width: auto;
+  max-height: 320px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(255, 234, 0, 0.2);
+  object-fit: contain;
+}
+
+
+.project-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.project-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+}
+
+.tech-stack {
+  color: #ffea00;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.project-btn {
+  display: inline-block;
+  background: #ffea00;
+  color: #111;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.project-btn:hover {
+  background: #fff;
+  color: #111;
+}
+
+.project-timeline {
+  color: #ffea00;
+  font-size: 0.95rem;
+  margin: 8px 0;
+}
+
+.project-points {
+  list-style-type: disc;
+  padding-left: 18px;
+  color: #ddd;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.project-points li {
+  margin-bottom: 6px;
+}
+
+
+  </style>
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Profile Section -->
+      <div class="profile-section">
+        <img src="assets/divyanshi pic.jpeg" alt="Divyanshi Avatar" class="avatar" />
+        <h1 class="name">Divyanshi Maurya</h1>
+        <p class="title">Data Analyst and Android Developer</p>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <ul>
+          <li>
+            <a href="mailto:divyanshi.tasks@gmail.com" class="contact-link">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>divyanshi.tasks@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+91 9877162324" class="contact-link">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <span>+91 98771-62324</span>
+            </a>
+          </li>
+          <li>
+            <address class="contact-link">
+              <ion-icon name="location-outline"></ion-icon>
+              <span>RaeBareli, Uttar Pradesh, India</span>
+            </address>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social Media Links -->
+      
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Navbar -->
+      <header class="top-navbar">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="nav-link">About</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+            <li><a href="education.html" class="nav-link">Education</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+            <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+            <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="projects" class="projects-section">
+        <h2 data-aos="fade-up">Projects</h2>
+      
+        <div class="projects-container">
+          
+          <!-- Project Card 1 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/project1.jpeg" alt="Project 1 Screenshot" />
+            <div class="project-info">
+              <h3>zenQR: Text and Image QR Converter</h3>
+              <p class="tech-stack">Tech Stack: Kotlin, Firebase Realtime DB, Firebase Auth, Storage</p>
+              
+              <!-- Timeline Date -->
+              <p class="project-timeline"><i class="fas fa-calendar-alt"></i> Feb 2024 - Apr 2024</p>
+              
+              <!-- Description as bullet list -->
+              <ul class="project-points">
+                <li>Integrated ZXing Library to enable real-time QR generation and scanning, cutting scan time by 50%.</li>
+                <li>Implemented secure Firebase Authentication and Realtime DB to manage users and attendance logs.</li>
+                <li>Designed a distraction-free, minimalist UI following “Zen” principles for smoother usability.</li>
+              </ul>
+          
+              <a href="https://github.com/Jiya003/your-project-link" target="_blank" class="project-btn">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+          
+      
+          <!-- Project Card 2 -->
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/project2.jpeg" alt="Project 2 Screenshot" />
+            <div class="project-info">
+              <h3>SmartHive: A BYOD classroom platform</h3>
+              <p class="tech-stack">Tech Stack: Kotlin, Firebase Realtime DB, Firebase Auth, Storage</p>
+              
+              <!-- Timeline Date -->
+              <p class="project-timeline"><i class="fas fa-calendar-alt"></i> Mar 2024 - Apr 2024</p>
+              
+              <!-- Description as bullet list -->
+              <ul class="project-points">
+                <li>Developed a mobile-friendly platform that supports seamless device integration for students and teachers under BYOD policies.</li>
+                <li>Implemented secure Firebase Authentication to manage different user roles and ensure personalized access to resources.</li>
+                <li>Integrated real-time monitoring and QR-based login features using ZXing for efficient, low-latency user authentication.</li>
+              </ul>
+          
+              <a href="https://github.com/Jiya003/your-project-link" target="_blank" class="project-btn">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-info">
+              <h3>Crop Yield Prediction System</h3>
+              <p class="tech-stack">Tech Stack: Python, Pandas, Scikit-learn, Matplotlib, Streamlit</p>
+              
+              <!-- Timeline Date -->
+              <p class="project-timeline"><i class="fas fa-calendar-alt"></i> Jan 2025 - Mar 2025</p>
+              
+              <!-- Description as bullet list -->
+              <ul class="project-points">
+                <li>Designed and trained multiple regression models on historical crop, rainfall, and temperature data to forecast optimal crop yields.</li>
+                <li>Performed data preprocessing and exploratory analysis to extract actionable insights for farmers and agricultural experts.</li>
+                <li>Deployed an interactive web app using Streamlit allowing users to input environmental conditions and receive crop yield predictions in real-time.</li>
+              </ul>
+          
+              <a href="https://github.com/Jiya003/your-project-link" target="_blank" class="project-btn">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-info">
+              <h3>Market Basket Analyzer: Product Association & Insights</h3>
+              <p class="tech-stack">Tech Stack: Python, Pandas, MLxtend, Seaborn, Matplotlib</p>
+              
+              <!-- Timeline Date -->
+              <p class="project-timeline"><i class="fas fa-calendar-alt"></i> Oct 2024 - Dec 2024</p>
+              
+              <!-- Description as bullet list -->
+              <ul class="project-points">
+                <li>Conducted Market Basket Analysis using the Apriori algorithm to identify high-confidence itemsets and generate association rules.</li>
+                <li>Visualized customer purchasing patterns to uncover frequent product combinations and cross-sell opportunities.</li>
+                <li>Delivered actionable business insights via custom dashboards and plotted support-confidence-lift graphs for stakeholders.</li>
+              </ul>
+          
+              <a href="https://github.com/Jiya003/your-project-link" target="_blank" class="project-btn">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+          
+          
+        </div>
+      </section>
+      
+      
+      
+      
+    </div>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+  
+
+</body>
+
+</html>
